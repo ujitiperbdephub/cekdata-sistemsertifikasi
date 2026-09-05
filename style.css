@@ -1,0 +1,222 @@
+/* ===== Sistem Informasi Data SRUT — style (match sumber asli) ===== */
+*{ box-sizing:border-box; }
+[hidden]{ display:none !important; }
+:root{
+  --cyan:#00BCD4;
+  --cyan-dark:#07aabf;
+  --sect:#306cba;      /* judul section */
+  --info:#17a2b8;      /* label field */
+  --success:#28a745;   /* value field */
+  --green:#18d26e;     /* aksen garis hijau */
+}
+
+body{
+  font-family:"Arimo", Arial, Helvetica, sans-serif;
+  font-size:14px;
+  color:#444;
+  margin:0;
+  background:#fff;
+}
+
+/* ---------- Header ---------- */
+#header{
+  background:var(--cyan);
+  padding:26px 0;   /* jaga tinggi bar biru tetap (~92px) walau logo/teks kecil */
+  color:#fff;
+  position:sticky;  /* nempel di atas saat scroll, tidak hilang */
+  top:0;
+  z-index:999;
+  box-shadow:0 2px 6px rgba(0,0,0,.12);
+  transition:padding .3s ease;
+}
+/* mengecil otomatis saat scroll (seperti situs asli) */
+#header.scrolled{ padding:12px 0; }
+#header.scrolled #logo img{ max-height:32px; }
+#header.scrolled #logo .logo-icon{ font-size:30px; }
+#header.scrolled #logo .logo-text .l1{ font-size:16px; }
+#header #logo img, #header #logo .logo-icon, #header .logo-text .l1{ transition:all .3s ease; }
+#header .container-fluid{
+  padding-left:30px; padding-right:30px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+#logo{ display:flex; align-items:center; margin-left:58px; }
+#logo a{ display:flex; align-items:center; text-decoration:none; color:#fff; }
+#logo img{ max-height:40px; width:auto; }
+#logo .logo-img{ margin-right:10px; }
+#logo .logo-icon{ font-size:38px; margin-right:12px; line-height:1; }
+#logo .logo-text{ display:flex; flex-direction:column; justify-content:center; }
+#logo .logo-text .l1{
+  font-weight:700; letter-spacing:1.5px; font-size:18px; line-height:1.05;
+  text-transform:uppercase;
+}
+#logo .logo-text .l2{
+  font-weight:400; letter-spacing:1px; font-size:12px; line-height:1.1;
+  text-transform:uppercase; opacity:.95;
+}
+/* hamburger dekoratif (mobile) */
+.nav-burger{ display:none; color:#fff; font-size:26px; background:none; border:0; cursor:default; }
+
+/* ---------- Section header (DATA SRUT) ---------- */
+.section-header{ text-align:center; margin:10px 0 8px; }
+.section-header h3{
+  font-size:32px; color:#111; text-transform:uppercase; font-weight:700;
+  position:relative; padding-bottom:15px; display:inline-block; margin:0;
+}
+.section-header h3::before{
+  content:''; position:absolute; display:block; width:120px; height:1px;
+  background:#ddd; bottom:1px; left:calc(50% - 60px);
+}
+.section-header h3::after{
+  content:''; position:absolute; display:block; width:40px; height:3px;
+  background:var(--green); bottom:0; left:calc(50% - 20px);
+}
+
+/* ---------- Section title (biru) ---------- */
+.sect-title{ color:var(--sect) !important; font-weight:700; font-size:18px; margin:0; }
+main hr{ margin-top:14px; margin-bottom:14px; border-top:1px solid #eee; }
+
+/* ---------- Tabel ---------- */
+.table{ width:100%; margin-bottom:1rem; border-collapse:collapse; }
+.table td{
+  padding:.75rem; vertical-align:top;
+  border:1px solid #dee2e6;
+}
+.table-striped tbody tr:nth-of-type(odd){ background:rgba(0,0,0,.03); }
+td.cell{ width:50%; }
+.text-info{ color:var(--info) !important; }
+.text-success{ color:var(--success) !important; }
+.text-uppercase{ text-transform:uppercase; }
+.cell .val{ display:block; margin-top:2px; }
+
+/* ---------- Foto bentuk fisik ---------- */
+.photo-col{ text-align:center; padding:0 15px 15px; }
+.photo-col img{ max-height:200px; width:100%; object-fit:contain; }
+.photo-col .ph-empty{
+  height:200px; width:100%; display:flex; align-items:center; justify-content:center;
+  background:#f4f4f4; color:#aaa; border:1px dashed #ccc; font-size:13px;
+}
+.photo-col .cap{ display:block; margin-top:6px; }
+
+/* ---------- Tombol lampiran ---------- */
+.btn-lampiran{
+  display:inline-block; background:var(--success); color:#fff; border:0;
+  padding:6px 12px; font-size:14px; border-radius:3px; cursor:pointer; margin-top:4px;
+}
+.btn-lampiran i{ margin-right:6px; }
+
+/* ---------- Tombol home dekoratif (bawah) ---------- */
+.home-btn-wrap{ text-align:center; margin:24px 0; }
+.home-btn{
+  display:inline-block; padding:6px 14px; border-radius:4px;
+  background:var(--info); color:#fff; font-size:14px; cursor:default; line-height:1.5;
+}
+.home-btn i{ margin-right:6px; }
+
+/* ---------- Footer ---------- */
+#footer{ background:var(--cyan); color:#eee; font-size:14px; padding:0 0 30px; }
+#footer .footer-top{ background:var(--cyan-dark); padding:60px 0 30px; }
+#footer h4{
+  font-size:14px; font-weight:bold; color:#fff; text-transform:uppercase;
+  position:relative; padding-bottom:12px; margin-bottom:14px;
+}
+#footer h4::before{ content:''; position:absolute; left:0; right:0; bottom:0; height:2px; background:#555; }
+#footer h4::after{ content:''; position:absolute; left:0; bottom:0; height:2px; width:60px; background:var(--green); }
+#footer p{ font-size:14px; line-height:24px; margin:0; color:#eee; text-align:justify; }
+#footer .footer-map{ margin-top:16px; }
+#footer .footer-map iframe{ width:100%; height:160px; border:0; }
+#footer .copyright{ padding-top:30px; text-align:left; }
+
+/* ---------- Back to top ---------- */
+.back-to-top{
+  position:fixed; right:15px; bottom:15px; display:none;
+  width:44px; height:44px; background:#607D8B; color:#fff; text-align:center;
+  line-height:44px; border-radius:4px; z-index:997; text-decoration:none; font-size:18px;
+}
+.back-to-top:hover{ color:#fff; }
+
+/* ---------- Modal viewer lampiran (gaya ViewerJS) ---------- */
+.viewer-overlay{
+  display:none; position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:1050;
+  padding:24px; overflow:auto;
+}
+.viewer-overlay.open{ display:block; }
+.viewer-box{
+  max-width:700px; margin:24px auto; background:#fff; border-radius:2px;
+  box-shadow:0 8px 40px rgba(0,0,0,.4); overflow:hidden;
+}
+.viewer-head{
+  background:#16788a; color:#cdeff5; padding:14px 18px; font-size:15px;
+  display:flex; align-items:center; justify-content:space-between; letter-spacing:.3px;
+}
+.viewer-head .vclose{ background:none; border:0; color:#fff; font-size:18px; cursor:pointer; }
+.viewer-body{ padding:16px; }
+.viewer-frame{ border:3px solid #2aa9c0; background:#525659; }
+.viewer-toolbar{
+  background:#474747; color:#e6e6e6; display:flex; align-items:center;
+  justify-content:space-between; padding:8px 12px; font-size:13px;
+}
+.viewer-toolbar .fname{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:60%; }
+.viewer-toolbar .tools{ display:flex; gap:6px; }
+.viewer-toolbar .tools button{
+  background:none; border:0; color:#e6e6e6; font-size:15px; cursor:pointer; padding:4px 7px; border-radius:3px;
+}
+.viewer-toolbar .tools button:hover{ background:#5c5c5c; }
+.viewer-doc{ background:#525659; overflow:auto; text-align:center; }
+.viewer-doc.is-pdf{ height:min(400px, 62vh); }
+.viewer-doc.is-image{ max-height:min(400px, 62vh); }
+.viewer-doc.is-empty{ height:300px; display:flex; align-items:center; justify-content:center; }
+.viewer-doc iframe{ width:100%; height:100%; border:0; display:block; }
+.viewer-doc img{ width:100%; height:auto; display:block; }
+.viewer-doc .empty{ color:#bbb; font-size:14px; }
+.pdf-pages{ display:flex; flex-direction:column; align-items:center; gap:10px; padding:12px; }
+.pdf-page{ max-width:none; background:#fff; box-shadow:0 1px 8px rgba(0,0,0,.5); }
+/* fullscreen: PDF/gambar memenuhi layar & tetap bisa di-scroll */
+.viewer-frame:fullscreen{ width:100vw; height:100vh; display:flex; flex-direction:column; background:#525659; }
+.viewer-frame:fullscreen .viewer-doc{ flex:1 1 auto; height:auto; max-height:none; }
+.viewer-frame:-webkit-full-screen{ width:100vw; height:100vh; display:flex; flex-direction:column; background:#525659; }
+.viewer-frame:-webkit-full-screen .viewer-doc{ flex:1 1 auto; height:auto; max-height:none; }
+.viewer-bottom{
+  background:#3a3a3a; color:#bbb; padding:6px 12px; font-size:12px;
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+}
+.vbottom-left{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+.viewer-bottom .vpage, .viewer-bottom .vnav{ display:flex; align-items:center; gap:6px; }
+.viewer-bottom button{ background:#5c5c5c; border:0; color:#fff; width:26px; height:22px; border-radius:3px; cursor:pointer; font-size:12px; line-height:1; }
+.viewer-bottom button:hover:not(:disabled){ background:#6b6b6b; }
+.viewer-bottom button:disabled{ opacity:.4; cursor:default; }
+.vpages{ display:flex; align-items:center; gap:5px; }
+.vpages input{ width:36px; text-align:center; background:#2b2b2b; border:1px solid #666; color:#fff; border-radius:3px; padding:2px 3px; font-size:12px; }
+.vsep{ width:1px; height:16px; background:#666; }
+#v-zoom{ min-width:42px; text-align:center; display:inline-block; }
+.viewer-bottom .vjs{ background:#5c5c5c; color:#fff; padding:2px 8px; border-radius:2px; font-weight:700; }
+.viewer-foot{ padding:14px 18px; text-align:right; border-top:1px solid #eee; }
+.btn-keluar{
+  background:#dc3545; color:#fff; border:0; padding:7px 14px; border-radius:3px; cursor:pointer; font-size:14px;
+}
+.btn-keluar i{ margin-right:6px; }
+
+/* ---------- Layout util ---------- */
+.container{ max-width:1140px; margin:0 auto; padding:0 15px; }
+.wrap-content{ padding-top:24px; padding-bottom:24px; }
+.row-photos{ display:flex; flex-wrap:nowrap; margin:0 -15px; }
+.row-photos .photo-col{ flex:0 0 33.333%; max-width:33.333%; }
+.footer-row{ display:flex; flex-wrap:wrap; gap:30px; }
+.footer-row .f-alamat{ flex:0 0 32%; max-width:32%; }
+.footer-row .f-tentang{ flex:1; }
+
+/* ---------- Mobile ---------- */
+@media (max-width:768px){
+  #logo .logo-text .l1{ font-size:18px; }
+  #logo .logo-text .l2{ font-size:10px; }
+  #logo .logo-icon{ font-size:30px; }
+  .nav-burger{ display:inline-block; }
+  .section-header h3{ font-size:26px; }
+  /* bentuk fisik tetap 1 baris (3 kolom) walau di mobile */
+  .row-photos .photo-col{ flex:0 0 33.333%; max-width:33.333%; padding:0 6px 10px; }
+  .photo-col img{ max-height:120px; }
+  .photo-col .ph-empty{ height:110px; font-size:11px; }
+  .photo-col .cap{ font-size:11px; }
+  .footer-row{ flex-direction:column; gap:24px; }
+  .footer-row .f-alamat, .footer-row .f-tentang{ flex:0 0 100%; max-width:100%; }
+  .table td{ padding:.6rem; }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data SRUT</title>
+  <link rel="icon" id="favicon-link" href="data:,">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER (tanpa menu kanan-atas; hamburger dekoratif di mobile) -->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo"><a href="#" onclick="return false;" id="brand-link"></a></div>
+      <button class="nav-burger" type="button" aria-label="menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main class="wrap-content">
+    <div class="container">
+      <br>
+      <hr>
+      <header class="section-header"><h3 id="page-title">DATA SRUT</h3></header>
+
+      <div id="sections"></div>
+
+      <hr>
+      <!-- tombol home paling bawah: icon saja, tidak di-link -->
+      <div class="home-btn-wrap">
+        <span class="home-btn" title="Home"><i class="fa fa-home"></i> Home</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER (tanpa ikon sosial media) -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-row">
+          <div class="f-alamat">
+            <h4 id="f-alamat-title">ALAMAT</h4>
+            <p id="f-alamat"></p>
+            <div class="footer-map" id="f-map"></div>
+          </div>
+          <div class="f-tentang">
+            <h4 id="f-tentang-title">TENTANG KAMI</h4>
+            <p id="f-tentang"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright" id="f-copyright"></div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- MODAL VIEWER LAMPIRAN -->
+  <div class="viewer-overlay" id="viewer">
+    <div class="viewer-box">
+      <div class="viewer-head">
+        <span>LAMPIRAN DOKUMEN KENDARAAN</span>
+        <button class="vclose" type="button" data-close><i class="fa fa-close"></i></button>
+      </div>
+      <div class="viewer-body">
+        <div class="viewer-frame">
+          <div class="viewer-toolbar">
+            <span class="fname" id="v-fname">dokumen</span>
+            <span class="tools">
+              <button type="button" id="v-present" title="Presentation (fullscreen)"><i class="fa fa-desktop"></i></button>
+              <button type="button" id="v-full" title="Fullscreen"><i class="fa fa-arrows-alt"></i></button>
+              <button type="button" id="v-download" title="Download"><i class="fa fa-download"></i></button>
+            </span>
+          </div>
+          <div class="viewer-doc is-empty" id="v-doc"><span class="empty">Belum ada lampiran</span></div>
+          <div class="viewer-bottom">
+            <span class="vbottom-left">
+              <span class="vpage" id="v-pagectl" hidden>
+                <button type="button" id="v-pgup" title="Halaman sebelumnya"><i class="fa fa-chevron-up"></i></button>
+                <button type="button" id="v-pgdn" title="Halaman berikutnya"><i class="fa fa-chevron-down"></i></button>
+                <span class="vpages">Page <input type="text" id="v-pgnum" value="1"> of <span id="v-pgtot">1</span></span>
+                <span class="vsep"></span>
+                <button type="button" id="v-zout" title="Perkecil"><i class="fa fa-minus"></i></button>
+                <span id="v-zoom">100%</span>
+                <button type="button" id="v-zin" title="Perbesar"><i class="fa fa-plus"></i></button>
+              </span>
+              <span class="vnav" id="v-attctl" hidden>
+                <button type="button" id="v-prev" title="Lampiran sebelumnya"><i class="fa fa-chevron-left"></i></button>
+                <button type="button" id="v-next" title="Lampiran berikutnya"><i class="fa fa-chevron-right"></i></button>
+                <span id="v-count">Lampiran 1 dari 1</span>
+              </span>
+            </span>
+            <span class="vjs">ViewerJS</span>
+          </div>
+        </div>
+      </div>
+      <div class="viewer-foot">
+        <button class="btn-keluar" type="button" data-close><i class="fa fa-close"></i>Keluar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/pdfjs/pdf.min.js"></script>
+  <script src="lib/pdf-lib.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

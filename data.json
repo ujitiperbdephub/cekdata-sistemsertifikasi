@@ -1,0 +1,97 @@
+{
+  "brand": {
+    "line1": "TEKNIK KOMPUTER",
+    "line2": "DATA SISTEM REGISTRATION UAT",
+    "logo": "uploads/logo-1788609659340.png",
+    "favicon": "uploads/favicon-1788609664917.png"
+  },
+  "title": "DATA SRUT",
+  "data_kendaraan": {
+    "no_srut": "744276/IX/SRUT-596/DJPD-SPD/07/2026",
+    "no_sk": "KP-DJPD 4216 TAHUN 2025",
+    "tgl_sk": "03 - 09 - 2025",
+    "nomor_rangka": "MR0AWAAA5T0843925",
+    "nomor_mesin": "1TR-B416352",
+    "merek": "TOYOTA/TGN110R-ATMSKD3 C/C PU (4X2) M/T VARIAN 2/",
+    "jenis_kendaraan": "MOBIL BARANG BAK TERTUTUP (BOX)",
+    "warna": "PUTIH",
+    "lampiran": [
+      "uploads/data_kendaraan_lampiran-1788606456888.jpeg",
+      "uploads/data_kendaraan_lampiran-1788606456912.jpg",
+      "uploads/data_kendaraan_lampiran-1788606456940.jpeg",
+      "uploads/data_kendaraan_lampiran-1788606456952.jpg"
+    ]
+  },
+  "dimensi": {
+    "panjang_total": "5150",
+    "lebar_total": "1885",
+    "tinggi_total": "2680",
+    "jarak_sumbu_1_2": "2750",
+    "rear_overhang": "1545",
+    "jarak_sumbu_2_3": "0",
+    "front_overhang": "855",
+    "jarak_sumbu_3_4": "0"
+  },
+  "karoseri": {
+    "jumlah_silinder": "4",
+    "isi_silinder": "1998",
+    "panjang_box": "2490",
+    "daya_motor": "102 KW/5.600 RPM",
+    "lebar_box": "1865",
+    "jumlah_tempat_duduk": "3",
+    "tinggi_box": "1970",
+    "rumah_badan": "7",
+    "jbb_jbkb": "2570/0",
+    "jenis_angkutan": "ANGKUTAN BARANG",
+    "jbi_jbki": "2570/0",
+    "bahan_bakar": "BENSIN",
+    "sudut_pergi": "18",
+    "pintu_keluar_darurat": "0",
+    "varian": "VARIAN VI",
+    "keterangan_bak": "DILENGKAPI PINTU SAMPING KANAN,KIRI DAN BELAKANG MODEL SWING UP SWING DOWN"
+  },
+  "bentuk_fisik": {
+    "depan": "uploads/file-1788605574574.jpeg",
+    "samping": "uploads/file-1788605616673.jpg",
+    "belakang": "uploads/file-1788605591259.jpeg"
+  },
+  "keterangan": {
+    "ban_s1": "195 R15C 8PR 106/104S (TUNGGAL)",
+    "ban_s2": "195 R14C 8PR 106/104S (TUNGGAL)",
+    "ban_s3": "0",
+    "ban_s4": "0",
+    "kekuatan_s1": "855",
+    "kekuatan_s2": "1715",
+    "kekuatan_s3": "0",
+    "kekuatan_s4": "0",
+    "konfigurasi_sumbu": "1.1",
+    "kelas_jalan": "III",
+    "lebar_pintu_supir": "0",
+    "jarak_bangku": "0",
+    "berat_kosong": "1450",
+    "daya_angkut_barang": "0",
+    "daya_angkut_penumpang": "180"
+  },
+  "ceklist": {
+    "a": "Sesuai",
+    "b": "Sesuai",
+    "c": "Sesuai",
+    "d": "Sesuai",
+    "e": "Sesuai",
+    "f": "Sesuai",
+    "g": "Sesuai",
+    "h": "Sesuai",
+    "i": "Sesuai",
+    "j": "Sesuai",
+    "k": "Sesuai"
+  },
+  "footer": {
+    "alamat_title": "ALAMAT",
+    "alamat": "Jl.Medan Merdeka Barat No 8. Jakarta Pusat. DKI Jakarta 10110 - Indonesia",
+    "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.650048367146!2d106.822723!3d-6.175915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f42b949bdca3%3A0xe84e3d2305bf84e9!2sJl.%20Medan%20Merdeka%20Barat%2C%20Gambir%2C%20Kecamatan%20Gambir%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010110%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1788604722205!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+    "tentang_title": "TENTANG KAMI",
+    "tentang": "Untuk Peningkatan Pelayanan Penerbitan Sertifkasi Registrasi Uji Tipe Kendaraan Bermotor, Kementerian Perhubungan Mengembangkan Sistem SRUT Rancang Bangun. Dimana Permohonan SRUT Dapat Diajukan Secara Online Dan Persyaratan Permohonan Sertifkasi Registrasi Uji Tipe Kendaraan Bermotor Dapat Dipelajari Pada Sistem Ini. Apabila Ada Pertanyaan Silahkan Menghubungi Email: Ujitipe@dephub.go.id",
+    "copyright": "© Copyright Nama Instansi Anda. All Rights Reserved"
+  },
+  "tab_title": "TEKNIK KOMPUTER  DATA SRUT"
+}
