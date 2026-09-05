@@ -1,9 +1,9 @@
 {
   "brand": {
-    "line1": " SISTEM INFORMASI",
-    "line2": "SERTIFIKASI REGISTRASI UJI TIPE",
-    "logo": "uploads/logo-1788609659340.png",
-    "favicon": "uploads/favicon-1788609664917.png"
+    "line1": "SISTEM INFORMASI",
+    "line2": "SERTIFIKASI REGISTRASI UJI TIPE ",
+    "logo": "uploads/logo-1788629840086.png",
+    "favicon": "uploads/favicon-1788629846360.png"
   },
   "title": "DATA SRUT",
   "data_kendaraan": {
@@ -91,7 +91,7 @@
     "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.650048367146!2d106.822723!3d-6.175915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f42b949bdca3%3A0xe84e3d2305bf84e9!2sJl.%20Medan%20Merdeka%20Barat%2C%20Gambir%2C%20Kecamatan%20Gambir%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010110%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1788604722205!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
     "tentang_title": "TENTANG KAMI",
     "tentang": "Untuk Peningkatan Pelayanan Penerbitan Sertifkasi Registrasi Uji Tipe Kendaraan Bermotor, Kementerian Perhubungan Mengembangkan Sistem SRUT Rancang Bangun. Dimana Permohonan SRUT Dapat Diajukan Secara Online Dan Persyaratan Permohonan Sertifkasi Registrasi Uji Tipe Kendaraan Bermotor Dapat Dipelajari Pada Sistem Ini. Apabila Ada Pertanyaan Silahkan Menghubungi Email: Ujitipe@dephub.go.id",
-    "copyright": "© Copyright Nama Instansi Anda. All Rights Reserved"
+    "copyright": "© Copyright Kementerian Perhubungan RI. All Rights Reserved"
   },
   "tab_title": "Sistem Sertifikasi Registrasi Uji Tipe | Kementrian Perhubungan"
 }

@@ -197,7 +197,7 @@ td.cell{ width:50%; }
 
 /* ---------- Layout util ---------- */
 .container{ max-width:1140px; margin:0 auto; padding:0 15px; }
-.wrap-content{ padding-top:24px; padding-bottom:24px; }
+.wrap-content{ padding-top:8px; padding-bottom:24px; }
 .row-photos{ display:flex; flex-wrap:nowrap; margin:0 -15px; }
 .row-photos .photo-col{ flex:0 0 33.333%; max-width:33.333%; }
 .footer-row{ display:flex; flex-wrap:wrap; gap:30px; }
@@ -206,16 +206,20 @@ td.cell{ width:50%; }
 
 /* ---------- Mobile ---------- */
 @media (max-width:768px){
+  /* beri jarak kiri-kanan lebih lega di mobile */
+  .container{ padding-left:36px; padding-right:36px; }
+  /* logo + teks lebih ke kiri di mobile */
+  #logo{ margin-left:8px; }
+  #header .container-fluid{ padding-left:14px; padding-right:14px; }
   #logo .logo-text .l1{ font-size:18px; }
   #logo .logo-text .l2{ font-size:10px; }
   #logo .logo-icon{ font-size:30px; }
   .nav-burger{ display:inline-block; }
   .section-header h3{ font-size:26px; }
-  /* bentuk fisik tetap 1 baris (3 kolom) walau di mobile */
-  .row-photos .photo-col{ flex:0 0 33.333%; max-width:33.333%; padding:0 6px 10px; }
-  .photo-col img{ max-height:120px; }
-  .photo-col .ph-empty{ height:110px; font-size:11px; }
-  .photo-col .cap{ font-size:11px; }
+  /* bentuk fisik: di mobile ditumpuk ke bawah (bukan 1 baris) */
+  .row-photos{ flex-wrap:wrap; }
+  .row-photos .photo-col{ flex:0 0 100%; max-width:100%; padding:0 0 16px; }
+  .photo-col img{ max-height:260px; }
   .footer-row{ flex-direction:column; gap:24px; }
   .footer-row .f-alamat, .footer-row .f-tentang{ flex:0 0 100%; max-width:100%; }
   .table td{ padding:.6rem; }
