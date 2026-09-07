@@ -16,10 +16,8 @@
     "jenis_kendaraan": "MOBIL BARANG BAK TERTUTUP (BOX)",
     "warna": "PUTIH",
     "lampiran": [
-      "uploads/data_kendaraan_lampiran-1788606456888.jpeg",
-      "uploads/data_kendaraan_lampiran-1788606456912.jpg",
-      "uploads/data_kendaraan_lampiran-1788606456940.jpeg",
-      "uploads/data_kendaraan_lampiran-1788606456952.jpg"
+      "uploads/data_kendaraan_lampiran-1788788126481.jpeg",
+      "uploads/data_kendaraan_lampiran-1788788126516.jpeg"
     ]
   },
   "dimensi": {
@@ -51,9 +49,9 @@
     "keterangan_bak": "DILENGKAPI PINTU SAMPING KANAN,KIRI DAN BELAKANG MODEL SWING UP SWING DOWN"
   },
   "bentuk_fisik": {
-    "depan": "uploads/file-1788605574574.jpeg",
-    "samping": "uploads/file-1788605616673.jpg",
-    "belakang": "uploads/file-1788605591259.jpeg"
+    "depan": "uploads/bentuk_fisik_depan-1788788048259.jpeg",
+    "samping": "uploads/bentuk_fisik_samping-1788788061523.jpeg",
+    "belakang": "uploads/bentuk_fisik_belakang-1788788072919.jpeg"
   },
   "keterangan": {
     "ban_s1": "195 R15C 8PR 106/104S (TUNGGAL)",
